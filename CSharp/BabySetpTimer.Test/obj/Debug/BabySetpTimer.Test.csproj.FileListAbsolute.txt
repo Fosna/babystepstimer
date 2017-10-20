@@ -1,0 +1,13 @@
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\bin\Debug\BabySetpTimer.Test.dll
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\bin\Debug\BabySetpTimer.Test.pdb
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\obj\Debug\BabySetpTimer.Test.csprojResolveAssemblyReference.cache
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\obj\Debug\BabySetpTimer.Test.csproj.CoreCompileInputs.cache
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\obj\Debug\BabySetpTimer.Test.dll
+C:\Programming\baby-fosna\CSharp\BabySetpTimer.Test\obj\Debug\BabySetpTimer.Test.pdb

@@ -88,11 +88,11 @@ namespace BabyStepTimer
                             {
                                 if (remainingTime == "00:10")
                                 {
-                                    playSound("2166__suburban-grilla__bowl-struck.wav");
+                                    Sound.PlaySound("2166__suburban-grilla__bowl-struck.wav");
                                 }
                                 else if (remainingTime == "00:00")
                                 {
-                                    playSound("32304__acclivity__shipsbell.wav");
+                                    Sound.PlaySound("32304__acclivity__shipsbell.wav");
                                     _bodyBackgroundColor = BackgroundColorFailed;
                                 }
 
@@ -168,16 +168,5 @@ namespace BabyStepTimer
             return timerHtml;
         }
 
-        private static void playSound(string url)
-        {
-            var playThread = new Thread(() =>
-            {
-                var inputStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("BabyStepTimer.Resources."+url);
-                SoundPlayer player = new SoundPlayer(inputStream);
-                player.Play();
-            });
-            playThread.IsBackground = true;
-            playThread.Start();
-        }
     }
 }

@@ -31,6 +31,8 @@ namespace BabyStepTimer
         private static string _bodyBackgroundColor = BackgroundColorNeutral;
 
         private const string TwoDigitsFormat = "00";
+        private static Sound _warningSound;
+        private static Sound _endSound;
 
         [STAThread]
         static void Main()
@@ -45,6 +47,8 @@ namespace BabyStepTimer
             _webBrowser = new WebBrowser();
             _webBrowser.ScrollBarsEnabled = false;
             _webBrowser.DocumentText = CreateTimerHtml(getRemainingTimeCaption(TimeSpan.FromSeconds(0L)), BackgroundColorNeutral, false);
+            _warningSound = new Sound("2166__suburban-grilla__bowl-struck.wav");
+            _endSound = new Sound("32304__acclivity__shipsbell.wav");
 
             _webBrowser.Document.MouseDown += (sender, e) =>
             {
@@ -86,13 +90,13 @@ namespace BabyStepTimer
                             string remainingTime = getRemainingTimeCaption(elapsedTime);
                             if (_lastRemainingTime!=remainingTime)
                             {
-                                if (remainingTime == "00:10")
+                                if (remainingTime == "01:55")
                                 {
-                                    Sound.PlaySound("2166__suburban-grilla__bowl-struck.wav");
+                                    _warningSound.Play();
                                 }
                                 else if (remainingTime == "00:00")
                                 {
-                                    Sound.PlaySound("32304__acclivity__shipsbell.wav");
+                                    _endSound.Play();
                                     _bodyBackgroundColor = BackgroundColorFailed;
                                 }
 

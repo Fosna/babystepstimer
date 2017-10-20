@@ -11,13 +11,24 @@ namespace BabyStepTimer
 {
     class Sound
     {
-        public static void PlaySound(string url)
+        private SoundPlayer _player;
+
+        public Sound(string url)
+        {
+            _player = Load(url);
+        }
+
+        private SoundPlayer Load(string url)
+        {
+            var inputStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("BabyStepTimer.Resources." + url);
+            return new SoundPlayer(inputStream);
+        }
+
+        public void Play()
         {
             var playThread = new Thread(() =>
             {
-                var inputStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("BabyStepTimer.Resources." + url);
-                SoundPlayer player = new SoundPlayer(inputStream);
-                player.Play();
+                _player.Play();
             });
             playThread.IsBackground = true;
             playThread.Start();

@@ -30,6 +30,8 @@ namespace BabyStepTimer
         private static string _lastRemainingTime;
         private static string _bodyBackgroundColor = BackgroundColorNeutral;
 
+        public static IWallClock _clock = new SystemWallClock();
+
         private const string TwoDigitsFormat = "00";
 
         [STAThread]
@@ -67,16 +69,16 @@ namespace BabyStepTimer
                     ThreadStart start = () =>
                     {
                         _timerRunning = true;
-                        _currentCycleStartTime = DateTime.Now;
+                        _currentCycleStartTime = _clock.Now();
 
                         while (_timerRunning)
                         {
-                            TimeSpan elapsedTime = DateTime.Now - _currentCycleStartTime;
+                            TimeSpan elapsedTime = _clock.Now() - _currentCycleStartTime;
 
                             if (elapsedTime.TotalMilliseconds >= SecondsInCycle * 1000 + 980)
                             {
-                                _currentCycleStartTime = DateTime.Now;
-                                elapsedTime = DateTime.Now - _currentCycleStartTime;
+                                _currentCycleStartTime = _clock.Now();
+                                elapsedTime = _clock.Now() - _currentCycleStartTime;
                             }
                             if (elapsedTime.TotalMilliseconds >= 5000 && elapsedTime.TotalMilliseconds < 6000 && _bodyBackgroundColor != BackgroundColorNeutral)
                             {
@@ -107,7 +109,7 @@ namespace BabyStepTimer
                                 }
                                 _lastRemainingTime = remainingTime;
                             }
-                            Thread.Sleep(10);
+                            _clock.Sleep(10);
                         }
                     };
                     Thread timerThread = new Thread(start) {IsBackground = true};
@@ -123,7 +125,7 @@ namespace BabyStepTimer
                 }
                 else if (args.Url.AbsoluteUri == "command://reset/")
                 {
-                    _currentCycleStartTime = DateTime.Now;
+                    _currentCycleStartTime = _clock.Now();
                     _bodyBackgroundColor = BackgroundColorPassed;
                 }
                 else if (args.Url.AbsoluteUri == "command://quit/")

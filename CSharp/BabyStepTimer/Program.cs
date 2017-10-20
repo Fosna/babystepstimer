@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace BabyStepTimer
 {
-    static class Program
+    public static class Program
     {
         private const int WM_NCLBUTTONDOWN = 0xA1;
         private const int HTCAPTION = 0x2;
@@ -24,7 +24,7 @@ namespace BabyStepTimer
         private const long SecondsInCycle = 120;
 
         private static Form _mainForm;
-        private static WebBrowser _webBrowser;
+        public static WebBrowser _webBrowser;
         private static bool _timerRunning;
         private static DateTime _currentCycleStartTime;
         private static string _lastRemainingTime;
@@ -33,7 +33,7 @@ namespace BabyStepTimer
         private const string TwoDigitsFormat = "00";
 
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             _mainForm = new Form
             {

@@ -1,0 +1,16 @@
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\bin\Debug\BabyStepTimer.CharacterizationTest.dll
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\bin\Debug\BabyStepTimer.CharacterizationTest.pdb
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\bin\Debug\BabyStepTimer.exe
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\bin\Debug\BabyStepTimer.pdb
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\bin\Debug\BabyStepTimer.exe.config
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\obj\Debug\BabyStepTimer.CharacterizationTest.csprojResolveAssemblyReference.cache
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\obj\Debug\BabyStepTimer.CharacterizationTest.csproj.CoreCompileInputs.cache
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\obj\Debug\BabyStepTimer.CharacterizationTest.dll
+C:\Programming\baby-fosna\CSharp\BabyStepTimer.CharacterizationTest\obj\Debug\BabyStepTimer.CharacterizationTest.pdb
